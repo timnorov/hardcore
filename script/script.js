@@ -1,14 +1,14 @@
-let num = 266219;
-let mul = 1;
-let digit;
+'use strict';
 
-while (num > 0) {
-  digit = num % 10;
-  mul = mul * digit;
-  num = Math.floor( num / 10);
-}
+function check(input) { 
+  input = input.trim();
+  if (!/^[а-яА-ЯёЁa-zA-Z ]+$/.test(input) || !input) {
+    alert('Вы ввели НЕ строку!');
+  } else if (input.length > 30 ) {
+    alert(input.substr(0, 30) + '...');
+  } else {
+    alert(input);
+  }
+ }
 
-console.log(String(mul **= 3).slice(0,2));
-
-
-
+ check(prompt('введите строку!'));
