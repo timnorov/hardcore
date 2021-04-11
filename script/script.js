@@ -1,14 +1,18 @@
-let num = 266219;
-let mul = 1;
-let digit;
+'use strict';
+ 
+let week = ['Воскресенье','Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+  toDay = new Date().getDay();
 
-while (num > 0) {
-  digit = num % 10;
-  mul = mul * digit;
-  num = Math.floor( num / 10);
+for (let i = 0; i < week.length; i++) {
+  if (i == toDay) {
+    if (week[i] == 'Суббота' || week[i] == 'Воскресенье') {
+      document.write(`<p><i><b>${week[i]}</b></i></p>`);
+    } else {
+      document.write(`<p><b>${week[i]}</b></p>`);
+    }
+  } else if (week[i] == 'Суббота' || week[i] == 'Воскресенье') {
+    document.write(`<p><i>${week[i]}</i></p>`);
+  } else {
+    document.write(`<p>${week[i]}</p>`);
+  }
 }
-
-console.log(String(mul **= 3).slice(0,2));
-
-
-
