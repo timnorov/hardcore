@@ -76,6 +76,8 @@ function formatDateTime() {
   let time = dd + '.' + mm + '.' + yy + ' - ' + hh + ':' + min + ':' + ss;
   document.querySelector('#newHours').innerHTML = time;
 }
+setTimeout(fullDate, 0);
+setTimeout(formatDateTime, 0);
 
 setInterval(function(){
   fullDate();
