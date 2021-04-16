@@ -1,14 +1,9 @@
-let num = 266219;
-let mul = 1;
-let digit;
-
-while (num > 0) {
-  digit = num % 10;
-  mul = mul * digit;
-  num = Math.floor( num / 10);
+const setBg = () => {
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#" + randomColor;
+  color.innerHTML = "#" + randomColor;
+  change.style.color = "#" + randomColor;
 }
 
-console.log(String(mul **= 3).slice(0,2));
-
-
-
+change.addEventListener("click", setBg);
+setBg();
