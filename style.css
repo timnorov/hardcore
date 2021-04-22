@@ -1,0 +1,11 @@
+img {
+  display: block;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.pause {
+  display: none;
+}
+.train {
+  position: relative;
+}
