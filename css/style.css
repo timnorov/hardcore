@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(11, 26, 243);
+  
+}
+
+.container {
+  max-width: 555px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 300px;
+}
+
+#convert {
+  margin: auto;
+  margin-top: 30px;
+}
